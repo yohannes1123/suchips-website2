@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product</title>
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <span class="title">SUN CHIPS</span>
+    </div>
+    <nav>
+        <ul>
+          <li><a href="h.html">Home</a></li>
+          <li><a href="c.html">Care</a></li>
+          <li><a href="pro.html">Products</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="co.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+    </nav>
+</header>
+<aside id="sidebar">
+  <div class="back-btn" onclick="toggleSidebar()">✖</div>
+  <ul>
+    <li><a href="h.html">Home</a></li>
+    <li><a href="c.html">Care</a></li>
+    <li><a href="pro.html">Products</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="co.html">Contact</a></li>
+  </ul>
+</aside>
+
+<section class="products section" id="products">
+    <h2 >
+       
+    </h2>
+    <center>
+    <div>
+      <p class="section__title title">
+        BEST SELLING PRODUCT <br>
+        <br>
+        Here you can buy any kind of chips from our sunchips company.
+        <br>
+        Buy & Enjoy 
+    </p>
+  </div>
+  </center>
+    <div class="products__container1">
+        <div class="products__content1">
+            <article class="products__card1">
+                <img src="images/home-chips.png" alt="img" class="products__im">
+          <span class="products__subtitle" style="color: blue;">Paprika</span>
+          <h2 class="products__title">Box-chips</h2>
+          <span class="products__price">$600</span>
+
+          <button class="products__button" data-price="600">
+            <img src="images/shopping-bag-line.png" alt="" class="shop" >
+          </button>
+          <div class="quantity-selector , q">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="0" min="0">
+        </div>
+
+            </article>
+            <article class="products__card1">
+                <img src="images/home-chips1.png" alt="img" class="products__im">
+          <span class="products__subtitle" style="color: red;">Habeha Spice</span>
+          <h2 class="products__title">Box-chips</h2>
+          <span class="products__price">$550</span>
+
+          <button class="products__button" data-price="550">
+            <img src="images/shopping-bag-line.png" alt="" class="shop" >
+          </button>
+          <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="0" min="0">
+        </div>
+            </article>
+            <article class="products__card1">
+                <img src="images/home-chips2.png" alt="img" class="products__im">
+          <span class="products__subtitle" style="color: yellow;">Natural</span>
+          <h2 class="products__title">Box-chips</h2>
+          <span class="products__price">$500</span>
+
+          <button class="products__button" data-price="500">
+            <img src="images/shopping-bag-line.png" alt="" class="shop" >
+          </button>
+          <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="0" min="0">
+        </div>
+            </article>
+            <article class="products__card1">
+            
+                <img src="images/green1.png" alt="img" class="products__im1">
+                <span class="products__subtitle" style="color: green;" >Tomato</span>
+          <h2 class="products__title">Box-chips</h2>
+          <span class="products__price">$580</span>
+
+          <button class="products__button" data-price="580">
+            <img src="images/shopping-bag-line.png" alt="" class="shop" >
+          </button>
+          <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="0" min="0">
+        </div>
+            </article>
+            <article class="products__card1">
+                <img src="images/p1.png" alt="img" class="products__im">
+          <span class="products__subtitle" style="color: blueviolet;">Beef</span>
+          <h2 class="products__title">Box-chips</h2>
+          <span class="products__price">$400</span>
+
+          <button class="products__button" data-price="400">
+            <img src="images/shopping-bag-line.png" alt="" class="shop" >
+          </button>
+          <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="0" min="0">
+        </div>
+            </article>
+
+</section>
+<center>
+<div class="total-price-box">
+  <p class="total-price">Total Price: $0</p>
+</div>
+<button id="myButton" class="b">
+ Order Now
+</button>
+</center>
+<footer class="footer-item">
+  <p>&copy; Senselet Food Processing PLC. Addis Ababa,Etiopia </p> 
+</footer>
+<script src="pro.js">
+ </script>
+
+</body>
+</html>

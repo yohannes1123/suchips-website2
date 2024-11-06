@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2B8C7D;
+  color: #FFFFFF;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #00695c;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header .menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #004d40;
+  transition: left 0.3s;
+  z-index: 1000;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 2rem;
+}
+
+#sidebar ul li {
+  margin: 1rem 0;
+}
+
+#sidebar ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#sidebar ul li a:hover {
+  color: #ffcc00;
+}
+nav a:hover {
+  color: #ffcc00;
+  text-decoration: wavy;
+ }
+
+#sidebar .back-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1rem;
+  text-align: right;
+}
+
+.section__title {
+
+  margin-bottom: 2rem; 
+}
+
+
+.products__container1 {
+  position: relative;
+  padding-top: 4.5rem;
+}
+
+.products__content1 {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 2rem; 
+}
+
+
+.products__card1 {
+  position: relative;
+  background-color: hsl(170, 100%, 28%);
+  padding: 2rem; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+  z-index: 10;
+  transition: transform 0.3s ease; 
+}
+
+.products__card1:hover {
+  transform: translateY(-15px);
+}
+
+.products__im {
+  display: block; 
+  margin: 0 auto; 
+  width: 80%; 
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4));
+}
+
+.products__subtitle {
+  display: block; 
+  margin-bottom: 0.5rem; 
+  background-color: hsl(170, 100%, 28%);
+  color: #004d40;
+  font-size: large;
+  padding: 5px 10px; 
+}
+
+.products__title {
+  font: 400 1.5rem "titan one", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.products__price {
+  font-family: "titan one", sans-serif;
+  margin-bottom: 1rem; 
+}
+
+
+.products__button {
+  background-color: hsl(45, 100%, 52%);
+  color: hsl(45, 100%, 20%);
+  padding: 5px;
+  margin: 0px 0px 0px 15px ;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; 
+  transition: background-color 0.3s ease; 
+}
+
+.products__button:hover {
+  background-color: hsl(45, 100%, 60%); 
+}
+
+.shop {
+  width: 20px; 
+  height: 20px; 
+}
+
+.body{
+  background-color: aqua;
+}
+.im{
+  rotate: -30deg;
+width: 15%;
+}
+
+  .container {
+      display: flex; 
+      align-items: center;}
+      .b {
+        height: 40px;
+        width:70px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        background-color:rgb(9, 82, 95);
+        
+      }
+      .b a{
+        color:white;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        padding:  2.5rem;
+        background-color: #004d40;
+       
+      }
+      
+      .footer-item {
+        color: #FFEB3B;
+      }
+      @media (max-width: 768px) {
+        header nav ul {
+            display: none;
+        }
+        header .menu-icon {
+            display: block;
+        }
+        main .content .text-and-image {
+            flex-direction: column;
+        }
+        main .content img.animated-img {
+            max-width: 100%;
+            margin-top: 2rem;
+        }
+        main .content ul.animated-list {
+            max-width: 100%;
+        }
+      }
+      
+      @media (min-width: 769px) {
+        #sidebar {
+            display: none;
+        }
+      }
+
+      .products__im1{
+        display: block; /* Fixed the image display issue */
+        margin: 0 auto; /* Centered the image */
+        width: 75%; /* Adjusted image width */
+        filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.4));
+      }
+      
+      

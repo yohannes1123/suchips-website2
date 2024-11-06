@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="H.css">
+</head>
+<body onload="pageLoad()">
+    <div class="sidebar" id="sidebar">
+        <span class="close-btn" onclick="toggleSidebar()">&#x2715;</span>
+        <a href="h.html">Home</a>
+        <a href="c.html">Care</a>
+        <a href="pro.html">Products</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="co.html">Contact</a>
+    </div>
+    <div class="content" id="content">
+<header class="header">
+            <div class="logo-title">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <span class="title">SUN CHIPS</span>
+            </div>
+            <nav class="main-nav">
+                <a href="h.html">Home</a>
+                <a href="c.html">Care</a>
+                <a href="pro.html">Products</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="co.html">Contact</a>
+            </nav>
+            <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
+</header>
+<main>
+    <section class="hero">
+        <div class="text">
+                <h1>SNACK WITH <br> NO  LIMITS</h1>
+                <p>
+                    SUN Chips produces potato chips with carefully selected 
+                    the best Ethiopian potatoes using the latest technology from Holland.
+                </p>
+                <video controls   autoplay loop class="video">
+                    <source autoplay src="video/home-video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                    <p>When you are hungry and don't have time to cook, 
+                        snacks are the perfect solution, always prepare for midday hunger.</p>
+                    <button  class="cta-button"><a href="pro.html">SNACK NOW</a></button> 
+                </div>
+                <div class="image">
+                    <img src="images/home-chips.png" alt="Chips">
+        </div>
+    </section>
+</main>
+    <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; Senselet Food Processing PLC. Addis Ababa,Etiopia.</p>
+            </div>
+    </footer>
+</div>
+    <script src="H.js"></script>
+</body>
+</html>

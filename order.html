@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <span class="title">SUN CHIPS</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="h.html">Home</a></li>
+            <li><a href="c.html">Care</a></li>
+            <li><a href="pro.html">Products</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="co.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+    </nav>
+</header>
+
+<aside id="sidebar">
+  <div class="back-btn" onclick="toggleSidebar()">✖</div>
+  <ul>
+    <li><a href="h.html">Home</a></li>
+    <li><a href="c.html">Care</a></li>
+    <li><a href="pro.html">Products</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="co.html">Contact</a></li>
+  </ul>
+</aside>
+<main>
+  <section class="shipping-info" >
+    <h2>Shipping Information</h2>
+    <form class="form">
+      <label for="name">Name:</label>
+      <input type="text" required id="name" placeholder="yohannes" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '');" >
+      <label for="address">Address:</label>
+      <input type="text" required id="address"  placeholder="Kolfe Street" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '');">
+      <label for="city">City:</label>
+      <input type="text" required id="city"  placeholder="Ethiopia" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '');">
+      <label for="state">State:</label>
+      <input type="text" required id="state"  placeholder="Addis Ababa" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '');">
+      <label for="zip">Zip Code:</label>
+      <input type="text" required id="zip"  placeholder="0000" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" required id="phone"  placeholder="0900000000" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+      <label for="email">Email:</label>
+      <input type="email" required id="email"  placeholder="example@gmail.com">
+    </form>
+  </section>
+  
+  <section class="payment-info">
+    <h2>Payment Information</h2>
+    <form class="form">
+      <label for="cname">Name on Card:</label>
+      <input type="text" id="cname" required name="cardname" placeholder="Adnan" oninput="this.value = this.value.replace(/[^a-zA-Z ]/g, '');">
+      <label for="ccnum">Credit card number:</label>
+      <input type="text" id="ccnum"  required name="cardnumber" placeholder="1111-2222-3333-4444"oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+      <label for="expyear">Exp Year:</label>
+      <input type="text" id="expyear" required name="expyear" placeholder="2018"oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+      <label for="cvv">CVV:</label>
+      <input type="text" required id="cvv" name="cvv" placeholder="352" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+      <button type="submit" id="place-order-btn">Place Order</button>
+    </form>
+  </section>
+</main>
+<footer class="footer-item">
+  <p>&copy; Senselet Food Processing PLC. Addis Ababa,Etiopia.</p> 
+</footer>
+<script src="order.js"></script>
+</body>
+</html>
